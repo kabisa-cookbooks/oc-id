@@ -88,7 +88,7 @@ default['ocid']['unicorn_cookbook'] = 'oc-id'
 #
 default['ocid']['nginx_cookbook'] = 'oc-id'
 
-# Server adress used to configure Nginx.
+# Server address used to configure Nginx.
 #
 default['ocid']['nginx']['server_name'] = '33.33.32.250'
 
