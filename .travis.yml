@@ -3,4 +3,4 @@ rvm:
   - 2.1.2
 script:
   - bin/rubocop
-  - bin/foodcritic
+  - bin/foodcritic .
