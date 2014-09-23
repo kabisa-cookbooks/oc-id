@@ -1,0 +1,16 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-14.04
+
+suites:
+  - name: default
+    run_list: 'oc-id::default'
+    driver:
+      network:
+        - ['private_network', { ip: '33.33.32.250' }]

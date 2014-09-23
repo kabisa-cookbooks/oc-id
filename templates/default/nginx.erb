@@ -1,0 +1,17 @@
+################################################################################
+# This file is managed by Chef, using the oc-id cookbook.                      #
+# Editing this file by hand is highly discouraged!                             #
+################################################################################
+
+server {
+  listen <%= node['ocid']['nginx']['port'] %>;
+
+  server_name <%= node['ocid']['nginx']['server_name'] %>;
+
+  location / {
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header Host $http_host;
+    proxy_redirect off;
+    proxy_pass http://unix:/tmp/.ocid.sock.0;
+  }
+}

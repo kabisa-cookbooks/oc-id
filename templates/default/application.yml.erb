@@ -1,0 +1,7 @@
+################################################################################
+# This file is managed by Chef, using the oc-id cookbook.                      #
+# Editing this file by hand is highly discouraged!                             #
+################################################################################
+
+<%- require 'yaml' %>
+<%= node['ocid']['config'].to_hash.to_yaml %>

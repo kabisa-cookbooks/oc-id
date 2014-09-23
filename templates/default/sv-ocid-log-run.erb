@@ -1,0 +1,7 @@
+#!/bin/sh
+################################################################################
+# This file is managed by Chef, using the oc-id cookbook.                      #
+# Editing this file by hand is highly discouraged!                             #
+################################################################################
+
+exec svlogd -tt /var/log/<%= node['ocid']['name'] -%>
