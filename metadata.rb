@@ -1,5 +1,5 @@
 def read(file, default = '')
-  IO.read(File.join(File.dirname(__FILE__), file))
+  IO.read(File.join(File.dirname(__FILE__), file)).strip
 rescue Errno::ENOENT
   default
 end
