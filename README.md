@@ -5,7 +5,7 @@
 
 Installs Chef OC-ID oAuth 2.0 server
 
-[oc-id]: (https://supermarket.getchef.com/cookbooks/oc-id)
+[oc-id]: https://supermarket.getchef.com/cookbooks/oc-id
 [travis]: http://travis-ci.org/kabisa-cookbooks/oc-id
 
 ## Requirements
